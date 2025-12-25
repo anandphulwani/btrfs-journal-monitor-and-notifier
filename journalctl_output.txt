@@ -1,0 +1,749 @@
+Dec 23 15:57:29 harlax-sm01 kernel: Linux version 6.12.57+deb13-amd64 (debian-kernel@lists.debian.org) (x86_64-linux-gnu-gcc-14 (Debian 14.2.0-19) 14.2.0, GNU ld (GNU Binutils for Debian) 2.44) #1 SMP PREEMPT_DYNAMIC Debian 6.12.57-1 (2025-11-05)
+Dec 23 15:57:29 harlax-sm01 kernel: Command line: BOOT_IMAGE=/vmlinuz-6.12.57+deb13-amd64 root=UUID=6b432ba5-5906-4fb3-9390-b8739afd7dd9 ro nomodeset iommu=pt console=tty0
+Dec 23 15:57:29 harlax-sm01 kernel: Disabled fast string operations
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-provided physical RAM map:
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000008efff] usable
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x000000000008f000-0x000000000008f3ff] reserved
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000ce2b4fff] usable
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000cee90000-0x00000000cee94fff] usable
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000cee95000-0x00000000ceebefff] reserved
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000ceebf000-0x00000000ceee3fff] usable
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000ceee4000-0x00000000cefbefff] ACPI NVS
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000cefbf000-0x00000000cefeefff] usable
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000cefef000-0x00000000ceffefff] ACPI data
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000cefff000-0x00000000ceffffff] usable
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000cf000000-0x00000000cfffffff] reserved
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000e0000000-0x00000000e3ffffff] reserved
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x00000000ffe00000-0x00000000ffffffff] reserved
+Dec 23 15:57:29 harlax-sm01 kernel: BIOS-e820: [mem 0x0000000100000000-0x000000012fffffff] usable
+Dec 23 15:57:29 harlax-sm01 kernel: NX (Execute Disable) protection: active
+Dec 23 15:57:29 harlax-sm01 kernel: APIC: Static calls initialized
+Dec 23 15:57:29 harlax-sm01 kernel: SMBIOS 2.7 present.
+Dec 23 15:57:29 harlax-sm01 kernel: DMI:  /DN2800MT, BIOS MTCDT10N.86A.0165.2013.0114.1540 01/14/2013
+Dec 23 15:57:29 harlax-sm01 kernel: DMI: Memory slots populated: 2/2
+Dec 23 15:57:29 harlax-sm01 kernel: tsc: Fast TSC calibration using PIT
+Dec 23 15:57:29 harlax-sm01 kernel: tsc: Detected 1866.640 MHz processor
+Dec 23 15:57:29 harlax-sm01 kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Dec 23 15:57:29 harlax-sm01 kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Dec 23 15:57:29 harlax-sm01 kernel: last_pfn = 0x130000 max_arch_pfn = 0x400000000
+Dec 23 15:57:29 harlax-sm01 kernel: MTRR map: 8 entries (4 fixed + 4 variable; max 18), built from 7 variable MTRRs
+Dec 23 15:57:29 harlax-sm01 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Dec 23 15:57:29 harlax-sm01 kernel: last_pfn = 0xcf000 max_arch_pfn = 0x400000000
+Dec 23 15:57:29 harlax-sm01 kernel: found SMP MP-table at [mem 0x000fbe30-0x000fbe3f]
+Dec 23 15:57:29 harlax-sm01 kernel: RAMDISK: [mem 0x33281000-0x35937fff]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Early table checksum verification disabled
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: RSDP 0x00000000000F2390 000024 (v02 INTEL )
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: XSDT 0x00000000CEFFE120 000064 (v01 INTEL  DN2800MT 000000A5      01000013)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: FACP 0x00000000CEFF6000 0000F4 (v03 INTEL  DN2800MT 000000A5 MSFT 0100000D)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/Pm1aEventBlock: 32/16 (20240827/tbfadt-560)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI BIOS Warning (bug): 32/64X length mismatch in FADT/PmTimerBlock: 32/24 (20240827/tbfadt-560)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI BIOS Warning (bug): Invalid length for FADT/Pm1aEventBlock: 16, using default 32 (20240827/tbfadt-665)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI BIOS Warning (bug): Invalid length for FADT/PmTimerBlock: 24, using default 32 (20240827/tbfadt-665)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: DSDT 0x00000000CEFF8000 005CA6 (v02 INTEL  DN2800MT 000000A5 MSFT 0100000D)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: FACS 0x00000000CEF85000 000040
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: FACS 0x00000000CEF85000 000040
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: SSDT 0x00000000CEFF7000 00043E (v01 INTEL  DN2800MT 000000A5 MSFT 0100000D)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: APIC 0x00000000CEFF5000 000084 (v02 INTEL  DN2800MT 000000A5 MSFT 0100000D)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: MCFG 0x00000000CEFF4000 00003C (v01 INTEL  DN2800MT 000000A5 MSFT 0100000D)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: HPET 0x00000000CEFF3000 000038 (v01 INTEL  DN2800MT 000000A5 MSFT 0100000D)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: SSDT 0x00000000CEFF1000 000655 (v01 PmRef  CpuPm    00003000 INTL 20061109)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: SSDT 0x00000000CEFF0000 000259 (v01 PmRef  Cpu0Tst  00003000 INTL 20061109)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: SSDT 0x00000000CEFEF000 00020F (v01 PmRef  ApTst    00003000 INTL 20061109)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving FACP table memory at [mem 0xceff6000-0xceff60f3]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving DSDT table memory at [mem 0xceff8000-0xceffdca5]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving FACS table memory at [mem 0xcef85000-0xcef8503f]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving FACS table memory at [mem 0xcef85000-0xcef8503f]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving SSDT table memory at [mem 0xceff7000-0xceff743d]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving APIC table memory at [mem 0xceff5000-0xceff5083]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving MCFG table memory at [mem 0xceff4000-0xceff403b]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving HPET table memory at [mem 0xceff3000-0xceff3037]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving SSDT table memory at [mem 0xceff1000-0xceff1654]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving SSDT table memory at [mem 0xceff0000-0xceff0258]
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Reserving SSDT table memory at [mem 0xcefef000-0xcefef20e]
+Dec 23 15:57:29 harlax-sm01 kernel: No NUMA configuration found
+Dec 23 15:57:29 harlax-sm01 kernel: Faking a node at [mem 0x0000000000000000-0x000000012fffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: NODE_DATA(0) allocated [mem 0x12ffd5680-0x12fffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: Zone ranges:
+Dec 23 15:57:29 harlax-sm01 kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Dec 23 15:57:29 harlax-sm01 kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Dec 23 15:57:29 harlax-sm01 kernel:   Normal   [mem 0x0000000100000000-0x000000012fffffff]
+Dec 23 15:57:29 harlax-sm01 kernel:   Device   empty
+Dec 23 15:57:29 harlax-sm01 kernel: Movable zone start for each node
+Dec 23 15:57:29 harlax-sm01 kernel: Early memory node ranges
+Dec 23 15:57:29 harlax-sm01 kernel:   node   0: [mem 0x0000000000001000-0x000000000008efff]
+Dec 23 15:57:29 harlax-sm01 kernel:   node   0: [mem 0x0000000000100000-0x00000000ce2b4fff]
+Dec 23 15:57:29 harlax-sm01 kernel:   node   0: [mem 0x00000000cee90000-0x00000000cee94fff]
+Dec 23 15:57:29 harlax-sm01 kernel:   node   0: [mem 0x00000000ceebf000-0x00000000ceee3fff]
+Dec 23 15:57:29 harlax-sm01 kernel:   node   0: [mem 0x00000000cefbf000-0x00000000cefeefff]
+Dec 23 15:57:29 harlax-sm01 kernel:   node   0: [mem 0x00000000cefff000-0x00000000ceffffff]
+Dec 23 15:57:29 harlax-sm01 kernel:   node   0: [mem 0x0000000100000000-0x000000012fffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000012fffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Dec 23 15:57:29 harlax-sm01 kernel: On node 0, zone DMA: 113 pages in unavailable ranges
+Dec 23 15:57:29 harlax-sm01 kernel: On node 0, zone DMA32: 3035 pages in unavailable ranges
+Dec 23 15:57:29 harlax-sm01 kernel: On node 0, zone DMA32: 42 pages in unavailable ranges
+Dec 23 15:57:29 harlax-sm01 kernel: On node 0, zone DMA32: 219 pages in unavailable ranges
+Dec 23 15:57:29 harlax-sm01 kernel: On node 0, zone DMA32: 16 pages in unavailable ranges
+Dec 23 15:57:29 harlax-sm01 kernel: On node 0, zone Normal: 4096 pages in unavailable ranges
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PM-Timer IO Port: 0x408
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high level lint[0x1])
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high level lint[0x1])
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high level lint[0x1])
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: LAPIC_NMI (acpi_id[0x04] high level lint[0x1])
+Dec 23 15:57:29 harlax-sm01 kernel: IOAPIC[0]: apic_id 8, version 32, address 0xfec00000, GSI 0-23
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Dec 23 15:57:29 harlax-sm01 kernel: CPU topo: Max. logical packages:   1
+Dec 23 15:57:29 harlax-sm01 kernel: CPU topo: Max. logical dies:       1
+Dec 23 15:57:29 harlax-sm01 kernel: CPU topo: Max. dies per package:   1
+Dec 23 15:57:29 harlax-sm01 kernel: CPU topo: Max. threads per core:   2
+Dec 23 15:57:29 harlax-sm01 kernel: CPU topo: Num. cores per package:     2
+Dec 23 15:57:29 harlax-sm01 kernel: CPU topo: Num. threads per package:   4
+Dec 23 15:57:29 harlax-sm01 kernel: CPU topo: Allowing 4 present CPUs plus 0 hotplug CPUs
+Dec 23 15:57:29 harlax-sm01 kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Dec 23 15:57:29 harlax-sm01 kernel: PM: hibernation: Registered nosave memory: [mem 0x0008f000-0x000fffff]
+Dec 23 15:57:29 harlax-sm01 kernel: PM: hibernation: Registered nosave memory: [mem 0xce2b5000-0xcee8ffff]
+Dec 23 15:57:29 harlax-sm01 kernel: PM: hibernation: Registered nosave memory: [mem 0xcee95000-0xceebefff]
+Dec 23 15:57:29 harlax-sm01 kernel: PM: hibernation: Registered nosave memory: [mem 0xceee4000-0xcefbefff]
+Dec 23 15:57:29 harlax-sm01 kernel: PM: hibernation: Registered nosave memory: [mem 0xcefef000-0xceffefff]
+Dec 23 15:57:29 harlax-sm01 kernel: PM: hibernation: Registered nosave memory: [mem 0xcf000000-0xffffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: [mem 0xe4000000-0xffdfffff] available for PCI devices
+Dec 23 15:57:29 harlax-sm01 kernel: Booting paravirtualized kernel on bare hardware
+Dec 23 15:57:29 harlax-sm01 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+Dec 23 15:57:29 harlax-sm01 kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+Dec 23 15:57:29 harlax-sm01 kernel: percpu: Embedded 66 pages/cpu s233472 r8192 d28672 u524288
+Dec 23 15:57:29 harlax-sm01 kernel: pcpu-alloc: s233472 r8192 d28672 u524288 alloc=1*2097152
+Dec 23 15:57:29 harlax-sm01 kernel: pcpu-alloc: [0] 0 1 2 3 
+Dec 23 15:57:29 harlax-sm01 kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-6.12.57+deb13-amd64 root=UUID=6b432ba5-5906-4fb3-9390-b8739afd7dd9 ro nomodeset iommu=pt console=tty0
+Dec 23 15:57:29 harlax-sm01 kernel: Booted with the nomodeset parameter. Only the system framebuffer will be available
+Dec 23 15:57:29 harlax-sm01 kernel: Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: Fallback order for Node 0: 0 
+Dec 23 15:57:29 harlax-sm01 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 1041054
+Dec 23 15:57:29 harlax-sm01 kernel: Policy zone: Normal
+Dec 23 15:57:29 harlax-sm01 kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Dec 23 15:57:29 harlax-sm01 kernel: software IO TLB: area num 4.
+Dec 23 15:57:29 harlax-sm01 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Dec 23 15:57:29 harlax-sm01 kernel: ftrace: allocating 45728 entries in 179 pages
+Dec 23 15:57:29 harlax-sm01 kernel: ftrace: allocated 179 pages with 5 groups
+Dec 23 15:57:29 harlax-sm01 kernel: Dynamic Preempt: voluntary
+Dec 23 15:57:29 harlax-sm01 kernel: rcu: Preemptible hierarchical RCU implementation.
+Dec 23 15:57:29 harlax-sm01 kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=4.
+Dec 23 15:57:29 harlax-sm01 kernel:         Trampoline variant of Tasks RCU enabled.
+Dec 23 15:57:29 harlax-sm01 kernel:         Rude variant of Tasks RCU enabled.
+Dec 23 15:57:29 harlax-sm01 kernel:         Tracing variant of Tasks RCU enabled.
+Dec 23 15:57:29 harlax-sm01 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+Dec 23 15:57:29 harlax-sm01 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+Dec 23 15:57:29 harlax-sm01 kernel: RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+Dec 23 15:57:29 harlax-sm01 kernel: RCU Tasks Rude: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+Dec 23 15:57:29 harlax-sm01 kernel: RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+Dec 23 15:57:29 harlax-sm01 kernel: NR_IRQS: 524544, nr_irqs: 456, preallocated irqs: 16
+Dec 23 15:57:29 harlax-sm01 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Dec 23 15:57:29 harlax-sm01 kernel: Console: colour VGA+ 80x25
+Dec 23 15:57:29 harlax-sm01 kernel: printk: legacy console [tty0] enabled
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Core revision 20240827
+Dec 23 15:57:29 harlax-sm01 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484882848 ns
+Dec 23 15:57:29 harlax-sm01 kernel: APIC: Switch to symmetric I/O mode setup
+Dec 23 15:57:29 harlax-sm01 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Dec 23 15:57:29 harlax-sm01 kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x35d0247d9c3, max_idle_ns: 881590686229 ns
+Dec 23 15:57:29 harlax-sm01 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 3733.28 BogoMIPS (lpj=7466560)
+Dec 23 15:57:29 harlax-sm01 kernel: Disabled fast string operations
+Dec 23 15:57:29 harlax-sm01 kernel: CPU0: Thermal monitoring enabled (TM2)
+Dec 23 15:57:29 harlax-sm01 kernel: Last level iTLB entries: 4KB 32, 2MB 0, 4MB 0
+Dec 23 15:57:29 harlax-sm01 kernel: Last level dTLB entries: 4KB 64, 2MB 0, 4MB 8, 1GB 0
+Dec 23 15:57:29 harlax-sm01 kernel: process: using mwait in idle threads
+Dec 23 15:57:29 harlax-sm01 kernel: x86/fpu: x87 FPU will use FXSAVE
+Dec 23 15:57:29 harlax-sm01 kernel: Freeing SMP alternatives memory: 40K
+Dec 23 15:57:29 harlax-sm01 kernel: pid_max: default: 32768 minimum: 301
+Dec 23 15:57:29 harlax-sm01 kernel: LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,tomoyo,bpf,ipe,ima,evm
+Dec 23 15:57:29 harlax-sm01 kernel: landlock: Up and running.
+Dec 23 15:57:29 harlax-sm01 kernel: Yama: disabled by default; enable with sysctl kernel.yama.*
+Dec 23 15:57:29 harlax-sm01 kernel: AppArmor: AppArmor initialized
+Dec 23 15:57:29 harlax-sm01 kernel: TOMOYO Linux initialized
+Dec 23 15:57:29 harlax-sm01 kernel: LSM support for eBPF active
+Dec 23 15:57:29 harlax-sm01 kernel: Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: smpboot: CPU0: Intel(R) Atom(TM) CPU N2800   @ 1.86GHz (family: 0x6, model: 0x36, stepping: 0x1)
+Dec 23 15:57:29 harlax-sm01 kernel: Performance Events: PEBS fmt0+, Atom events, 8-deep LBR, Intel PMU driver.
+Dec 23 15:57:29 harlax-sm01 kernel: ... version:                3
+Dec 23 15:57:29 harlax-sm01 kernel: ... bit width:              40
+Dec 23 15:57:29 harlax-sm01 kernel: ... generic registers:      2
+Dec 23 15:57:29 harlax-sm01 kernel: ... value mask:             000000ffffffffff
+Dec 23 15:57:29 harlax-sm01 kernel: ... max period:             000000007fffffff
+Dec 23 15:57:29 harlax-sm01 kernel: ... fixed-purpose events:   3
+Dec 23 15:57:29 harlax-sm01 kernel: ... event mask:             0000000700000003
+Dec 23 15:57:29 harlax-sm01 kernel: signal: max sigframe size: 1440
+Dec 23 15:57:29 harlax-sm01 kernel: rcu: Hierarchical SRCU implementation.
+Dec 23 15:57:29 harlax-sm01 kernel: rcu:         Max phase no-delay instances is 1000.
+Dec 23 15:57:29 harlax-sm01 kernel: Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+Dec 23 15:57:29 harlax-sm01 kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+Dec 23 15:57:29 harlax-sm01 kernel: smp: Bringing up secondary CPUs ...
+Dec 23 15:57:29 harlax-sm01 kernel: smpboot: x86: Booting SMP configuration:
+Dec 23 15:57:29 harlax-sm01 kernel: .... node  #0, CPUs:      #2
+Dec 23 15:57:29 harlax-sm01 kernel: Disabled fast string operations
+Dec 23 15:57:29 harlax-sm01 kernel:  #1 #3
+Dec 23 15:57:29 harlax-sm01 kernel: Disabled fast string operations
+Dec 23 15:57:29 harlax-sm01 kernel: Disabled fast string operations
+Dec 23 15:57:29 harlax-sm01 kernel: smp: Brought up 1 node, 4 CPUs
+Dec 23 15:57:29 harlax-sm01 kernel: smpboot: Total of 4 processors activated (14933.12 BogoMIPS)
+Dec 23 15:57:29 harlax-sm01 kernel: node 0 deferred pages initialised in 8ms
+Dec 23 15:57:29 harlax-sm01 kernel: Memory: 3934648K/4164216K available (16384K kernel code, 2496K rwdata, 11800K rodata, 4152K init, 4936K bss, 224600K reserved, 0K cma-reserved)
+Dec 23 15:57:29 harlax-sm01 kernel: devtmpfs: initialized
+Dec 23 15:57:29 harlax-sm01 kernel: x86/mm: Memory block size: 128MB
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PM: Registering ACPI NVS region [mem 0xceee4000-0xcefbefff] (897024 bytes)
+Dec 23 15:57:29 harlax-sm01 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Dec 23 15:57:29 harlax-sm01 kernel: futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: pinctrl core: initialized pinctrl subsystem
+Dec 23 15:57:29 harlax-sm01 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Dec 23 15:57:29 harlax-sm01 kernel: DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+Dec 23 15:57:29 harlax-sm01 kernel: DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Dec 23 15:57:29 harlax-sm01 kernel: DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Dec 23 15:57:29 harlax-sm01 kernel: audit: initializing netlink subsys (disabled)
+Dec 23 15:57:29 harlax-sm01 kernel: audit: type=2000 audit(1766505436.240:1): state=initialized audit_enabled=0 res=1
+Dec 23 15:57:29 harlax-sm01 kernel: thermal_sys: Registered thermal governor 'fair_share'
+Dec 23 15:57:29 harlax-sm01 kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Dec 23 15:57:29 harlax-sm01 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Dec 23 15:57:29 harlax-sm01 kernel: thermal_sys: Registered thermal governor 'user_space'
+Dec 23 15:57:29 harlax-sm01 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Dec 23 15:57:29 harlax-sm01 kernel: cpuidle: using governor ladder
+Dec 23 15:57:29 harlax-sm01 kernel: cpuidle: using governor menu
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+Dec 23 15:57:29 harlax-sm01 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Dec 23 15:57:29 harlax-sm01 kernel: PCI: ECAM [mem 0xe0000000-0xe3ffffff] (base 0xe0000000) for domain 0000 [bus 00-3f]
+Dec 23 15:57:29 harlax-sm01 kernel: PCI: ECAM [mem 0xe0000000-0xe3ffffff] reserved as E820 entry
+Dec 23 15:57:29 harlax-sm01 kernel: PCI: Using configuration type 1 for base access
+Dec 23 15:57:29 harlax-sm01 kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Dec 23 15:57:29 harlax-sm01 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Dec 23 15:57:29 harlax-sm01 kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Added _OSI(Module Device)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Added _OSI(Processor Device)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: 5 ACPI AML tables successfully acquired and loaded
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Dynamic OEM Table Load:
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: SSDT 0xFFFF911040A3F400 0002A7 (v01 PmRef  Cpu0Ist  00003000 INTL 20061109)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Dynamic OEM Table Load:
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: SSDT 0xFFFF911040A92000 0001CF (v01 PmRef  ApIst    00003000 INTL 20061109)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Interpreter enabled
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Using IOAPIC for interrupt routing
+Dec 23 15:57:29 harlax-sm01 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Dec 23 15:57:29 harlax-sm01 kernel: PCI: Using E820 reservations for host bridge windows
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: Enabled 15 GPEs in block 00 to 1F
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Dec 23 15:57:29 harlax-sm01 kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+Dec 23 15:57:29 harlax-sm01 kernel: acpi PNP0A08:00: _OSC: OS requested [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR]
+Dec 23 15:57:29 harlax-sm01 kernel: acpi PNP0A08:00: _OSC: platform willing to grant [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR]
+Dec 23 15:57:29 harlax-sm01 kernel: acpi PNP0A08:00: _OSC: platform retains control of PCIe features (AE_ERROR)
+Dec 23 15:57:29 harlax-sm01 kernel: acpi PNP0A08:00: [Firmware Info]: ECAM [mem 0xe0000000-0xe3ffffff] for domain 0000 [bus 00-3f] only partially covers this bridge
+Dec 23 15:57:29 harlax-sm01 kernel: PCI host bridge to bus 0000:00
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000fffff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: root bus resource [mem 0xcf800000-0xfebfffff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: root bus resource [mem 0xfed40000-0xfed44fff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:00.0: [8086:0bf2] type 00 class 0x060000 conventional PCI endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:02.0: [8086:0be2] type 00 class 0x030000 conventional PCI endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:02.0: BAR 0 [mem 0xd0500000-0xd05fffff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:02.0: BAR 1 [io  0x30d0-0x30d7]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0: [8086:27d0] type 01 class 0x060400 PCIe Root Port
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0: PCI bridge to [bus 01]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0:   bridge window [io  0x2000-0x2fff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0:   bridge window [mem 0xd0000000-0xd04fffff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.0: [8086:27c8] type 00 class 0x0c0300 conventional PCI endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.0: BAR 4 [io  0x30a0-0x30bf]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.1: [8086:27c9] type 00 class 0x0c0300 conventional PCI endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.1: BAR 4 [io  0x3080-0x309f]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.2: [8086:27ca] type 00 class 0x0c0300 conventional PCI endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.2: BAR 4 [io  0x3060-0x307f]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.3: [8086:27cb] type 00 class 0x0c0300 conventional PCI endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.3: BAR 4 [io  0x3040-0x305f]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.7: [8086:27cc] type 00 class 0x0c0320 conventional PCI endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.7: BAR 0 [mem 0xd0600400-0xd06007ff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.7: PME# supported from D0 D3hot D3cold
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1e.0: [8086:2448] type 01 class 0x060401 conventional PCI bridge
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1e.0: PCI bridge to [bus 02] (subtractive decode)
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.0: [8086:27bc] type 00 class 0x060100 conventional PCI endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.0: [Firmware Bug]: Tiger Point LPC.BM_STS cleared
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.2: [8086:27c1] type 00 class 0x010601 conventional PCI endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.2: BAR 0 [io  0x30c8-0x30cf]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.2: BAR 1 [io  0x30dc-0x30df]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.2: BAR 2 [io  0x30c0-0x30c7]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.2: BAR 3 [io  0x30d8-0x30db]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.2: BAR 4 [io  0x3020-0x302f]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.2: BAR 5 [mem 0xd0600000-0xd06003ff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.2: PME# supported from D3hot
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.3: [8086:27da] type 00 class 0x0c0500 conventional PCI endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1f.3: BAR 4 [io  0x3000-0x301f]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:01:00.0: [8086:10d3] type 00 class 0x020000 PCIe Endpoint
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:01:00.0: BAR 0 [mem 0xd0400000-0xd041ffff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:01:00.0: BAR 1 [mem 0xd0000000-0xd03fffff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:01:00.0: BAR 2 [io  0x2000-0x201f]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:01:00.0: BAR 3 [mem 0xd0420000-0xd0423fff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0: PCI bridge to [bus 01]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:02: extended config space not accessible
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1e.0: PCI bridge to [bus 02] (subtractive decode)
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1e.0:   bridge window [io  0x0000-0x0cf7 window] (subtractive decode)
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1e.0:   bridge window [io  0x0d00-0xffff window] (subtractive decode)
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1e.0:   bridge window [mem 0x000a0000-0x000fffff window] (subtractive decode)
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1e.0:   bridge window [mem 0xcf800000-0xfebfffff window] (subtractive decode)
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1e.0:   bridge window [mem 0xfed40000-0xfed44fff window] (subtractive decode)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 11
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 0
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKB disabled
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 10
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKE disabled
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKF disabled
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKG disabled
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: PCI: Interrupt link LNKH configured for IRQ 9
+Dec 23 15:57:29 harlax-sm01 kernel: iommu: Default domain type: Passthrough (set via kernel command line)
+Dec 23 15:57:29 harlax-sm01 kernel: pps_core: LinuxPPS API ver. 1 registered
+Dec 23 15:57:29 harlax-sm01 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Dec 23 15:57:29 harlax-sm01 kernel: PTP clock support registered
+Dec 23 15:57:29 harlax-sm01 kernel: EDAC MC: Ver: 3.0.0
+Dec 23 15:57:29 harlax-sm01 kernel: NetLabel: Initializing
+Dec 23 15:57:29 harlax-sm01 kernel: NetLabel:  domain hash size = 128
+Dec 23 15:57:29 harlax-sm01 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Dec 23 15:57:29 harlax-sm01 kernel: NetLabel:  unlabeled traffic allowed by default
+Dec 23 15:57:29 harlax-sm01 kernel: PCI: Using ACPI for IRQ routing
+Dec 23 15:57:29 harlax-sm01 kernel: PCI: pci_cache_line_size set to 64 bytes
+Dec 23 15:57:29 harlax-sm01 kernel: resource: Expanded resource Reserved due to conflict with PCI Bus 0000:00
+Dec 23 15:57:29 harlax-sm01 kernel: e820: reserve RAM buffer [mem 0x0008f000-0x0008ffff]
+Dec 23 15:57:29 harlax-sm01 kernel: e820: reserve RAM buffer [mem 0xce2b5000-0xcfffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: e820: reserve RAM buffer [mem 0xcee95000-0xcfffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: e820: reserve RAM buffer [mem 0xceee4000-0xcfffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: e820: reserve RAM buffer [mem 0xcefef000-0xcfffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: e820: reserve RAM buffer [mem 0xcf000000-0xcfffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Dec 23 15:57:29 harlax-sm01 kernel: vgaarb: loaded
+Dec 23 15:57:29 harlax-sm01 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+Dec 23 15:57:29 harlax-sm01 kernel: hpet0: 3 comparators, 64-bit 14.318180 MHz counter
+Dec 23 15:57:29 harlax-sm01 kernel: clocksource: Switched to clocksource tsc-early
+Dec 23 15:57:29 harlax-sm01 kernel: VFS: Disk quotas dquot_6.6.0
+Dec 23 15:57:29 harlax-sm01 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Dec 23 15:57:29 harlax-sm01 kernel: AppArmor: AppArmor Filesystem Enabled
+Dec 23 15:57:29 harlax-sm01 kernel: pnp: PnP ACPI init
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:00: [mem 0xfed00000-0xfed003ff] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:01: [io  0x0680-0x069f] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:01: [io  0x1000-0x100f] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:01: [io  0xffff] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:01: [io  0xffff] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:01: [io  0x0400-0x047f] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:01: [io  0x0500-0x057f] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:01: [io  0x0600-0x061f] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:02: [io  0x06a0-0x06af] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:02: [io  0x06b0-0x06ff] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:07: [mem 0xfed1c000-0xfed1ffff] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:07: [mem 0x00000000-0x00003fff] could not be reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:07: [mem 0x00000000-0x00000fff] could not be reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:07: [mem 0x00000000-0x00000fff] could not be reserved
+Dec 23 15:57:29 harlax-sm01 kernel: system 00:07: [mem 0xfed45000-0xfed8ffff] has been reserved
+Dec 23 15:57:29 harlax-sm01 kernel: pnp: PnP ACPI: found 8 devices
+Dec 23 15:57:29 harlax-sm01 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Dec 23 15:57:29 harlax-sm01 kernel: NET: Registered PF_INET protocol family
+Dec 23 15:57:29 harlax-sm01 kernel: IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: TCP: Hash tables configured (established 32768 bind 32768)
+Dec 23 15:57:29 harlax-sm01 kernel: MPTCP token hash table entries: 4096 (order: 4, 98304 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+Dec 23 15:57:29 harlax-sm01 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Dec 23 15:57:29 harlax-sm01 kernel: NET: Registered PF_XDP protocol family
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01] add_size 200000 add_align 100000
+Dec 23 15:57:29 harlax-sm01 kernel: resource: avoiding allocation from e820 entry [mem 0xcf000000-0xcfffffff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0: bridge window [mem 0xd0700000-0xd08fffff 64bit pref]: assigned
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0: PCI bridge to [bus 01]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0:   bridge window [io  0x2000-0x2fff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0:   bridge window [mem 0xd0000000-0xd04fffff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1c.0:   bridge window [mem 0xd0700000-0xd08fffff 64bit pref]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1e.0: PCI bridge to [bus 02]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000fffff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: resource 7 [mem 0xcf800000-0xfebfffff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:00: resource 8 [mem 0xfed40000-0xfed44fff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:01: resource 0 [io  0x2000-0x2fff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:01: resource 1 [mem 0xd0000000-0xd04fffff]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:01: resource 2 [mem 0xd0700000-0xd08fffff 64bit pref]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:02: resource 4 [io  0x0000-0x0cf7 window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:02: resource 5 [io  0x0d00-0xffff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:02: resource 6 [mem 0x000a0000-0x000fffff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:02: resource 7 [mem 0xcf800000-0xfebfffff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci_bus 0000:02: resource 8 [mem 0xfed40000-0xfed44fff window]
+Dec 23 15:57:29 harlax-sm01 kernel: pci 0000:00:1d.7: quirk_usb_early_handoff+0x0/0x750 took 18629 usecs
+Dec 23 15:57:29 harlax-sm01 kernel: PCI: CLS 64 bytes, default 64
+Dec 23 15:57:29 harlax-sm01 kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Dec 23 15:57:29 harlax-sm01 kernel: software IO TLB: mapped [mem 0x00000000ca2b5000-0x00000000ce2b5000] (64MB)
+Dec 23 15:57:29 harlax-sm01 kernel: Trying to unpack rootfs image as initramfs...
+Dec 23 15:57:29 harlax-sm01 kernel: Initialise system trusted keyrings
+Dec 23 15:57:29 harlax-sm01 kernel: Key type blacklist registered
+Dec 23 15:57:29 harlax-sm01 kernel: workingset: timestamp_bits=36 max_order=20 bucket_order=0
+Dec 23 15:57:29 harlax-sm01 kernel: zbud: loaded
+Dec 23 15:57:29 harlax-sm01 kernel: fuse: init (API version 7.41)
+Dec 23 15:57:29 harlax-sm01 kernel: integrity: Platform Keyring initialized
+Dec 23 15:57:29 harlax-sm01 kernel: integrity: Machine keyring initialized
+Dec 23 15:57:29 harlax-sm01 kernel: Key type asymmetric registered
+Dec 23 15:57:29 harlax-sm01 kernel: Asymmetric key parser 'x509' registered
+Dec 23 15:57:29 harlax-sm01 kernel: Freeing initrd memory: 39644K
+Dec 23 15:57:29 harlax-sm01 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+Dec 23 15:57:29 harlax-sm01 kernel: io scheduler mq-deadline registered
+Dec 23 15:57:29 harlax-sm01 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Dec 23 15:57:29 harlax-sm01 kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Dec 23 15:57:29 harlax-sm01 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Dec 23 15:57:29 harlax-sm01 kernel: 00:05: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+Dec 23 15:57:29 harlax-sm01 kernel: 00:06: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Dec 23 15:57:29 harlax-sm01 kernel: Linux agpgart interface v0.103
+Dec 23 15:57:29 harlax-sm01 kernel: i8042: PNP: No PS/2 controller found.
+Dec 23 15:57:29 harlax-sm01 kernel: mousedev: PS/2 mouse device common for all mice
+Dec 23 15:57:29 harlax-sm01 kernel: rtc_cmos 00:03: RTC can wake from S4
+Dec 23 15:57:29 harlax-sm01 kernel: rtc_cmos 00:03: registered as rtc0
+Dec 23 15:57:29 harlax-sm01 kernel: rtc_cmos 00:03: setting system clock to 2025-12-23T15:57:17 UTC (1766505437)
+Dec 23 15:57:29 harlax-sm01 kernel: rtc_cmos 00:03: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+Dec 23 15:57:29 harlax-sm01 kernel: intel_pstate: CPU model not supported
+Dec 23 15:57:29 harlax-sm01 kernel: NET: Registered PF_INET6 protocol family
+Dec 23 15:57:29 harlax-sm01 kernel: Segment Routing with IPv6
+Dec 23 15:57:29 harlax-sm01 kernel: In-situ OAM (IOAM) with IPv6
+Dec 23 15:57:29 harlax-sm01 kernel: mip6: Mobile IPv6
+Dec 23 15:57:29 harlax-sm01 kernel: NET: Registered PF_PACKET protocol family
+Dec 23 15:57:29 harlax-sm01 kernel: mpls_gso: MPLS GSO support
+Dec 23 15:57:29 harlax-sm01 kernel: microcode: Current revision: 0x0000010d
+Dec 23 15:57:29 harlax-sm01 kernel: IPI shorthand broadcast: enabled
+Dec 23 15:57:29 harlax-sm01 kernel: sched_clock: Marking stable (1620025350, 12567074)->(1638339424, -5747000)
+Dec 23 15:57:29 harlax-sm01 kernel: registered taskstats version 1
+Dec 23 15:57:29 harlax-sm01 kernel: Loading compiled-in X.509 certificates
+Dec 23 15:57:29 harlax-sm01 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 7c2b230a25e7258756ba9d8e66b30d6d89429d6d'
+Dec 23 15:57:29 harlax-sm01 kernel: Demotion targets for Node 0: null
+Dec 23 15:57:29 harlax-sm01 kernel: Key type .fscrypt registered
+Dec 23 15:57:29 harlax-sm01 kernel: Key type fscrypt-provisioning registered
+Dec 23 15:57:29 harlax-sm01 kernel: tsc: Refined TSC clocksource calibration: 1866.666 MHz
+Dec 23 15:57:29 harlax-sm01 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x35d055461d7, max_idle_ns: 881590757721 ns
+Dec 23 15:57:29 harlax-sm01 kernel: clocksource: Switched to clocksource tsc
+Dec 23 15:57:29 harlax-sm01 kernel: Key type encrypted registered
+Dec 23 15:57:29 harlax-sm01 kernel: AppArmor: AppArmor sha256 policy hashing enabled
+Dec 23 15:57:29 harlax-sm01 kernel: ima: No TPM chip found, activating TPM-bypass!
+Dec 23 15:57:29 harlax-sm01 kernel: ima: Allocated hash algorithm: sha256
+Dec 23 15:57:29 harlax-sm01 kernel: ima: No architecture policies found
+Dec 23 15:57:29 harlax-sm01 kernel: evm: Initialising EVM extended attributes:
+Dec 23 15:57:29 harlax-sm01 kernel: evm: security.selinux
+Dec 23 15:57:29 harlax-sm01 kernel: evm: security.SMACK64 (disabled)
+Dec 23 15:57:29 harlax-sm01 kernel: evm: security.SMACK64EXEC (disabled)
+Dec 23 15:57:29 harlax-sm01 kernel: evm: security.SMACK64TRANSMUTE (disabled)
+Dec 23 15:57:29 harlax-sm01 kernel: evm: security.SMACK64MMAP (disabled)
+Dec 23 15:57:29 harlax-sm01 kernel: evm: security.apparmor
+Dec 23 15:57:29 harlax-sm01 kernel: evm: security.ima
+Dec 23 15:57:29 harlax-sm01 kernel: evm: security.capability
+Dec 23 15:57:29 harlax-sm01 kernel: evm: HMAC attrs: 0x1
+Dec 23 15:57:29 harlax-sm01 kernel: RAS: Correctable Errors collector initialized.
+Dec 23 15:57:29 harlax-sm01 kernel: clk: Disabling unused clocks
+Dec 23 15:57:29 harlax-sm01 kernel: PM: genpd: Disabling unused power domains
+Dec 23 15:57:29 harlax-sm01 kernel: Freeing unused decrypted memory: 2028K
+Dec 23 15:57:29 harlax-sm01 kernel: Freeing unused kernel image (initmem) memory: 4152K
+Dec 23 15:57:29 harlax-sm01 kernel: Write protecting the kernel read-only data: 28672k
+Dec 23 15:57:29 harlax-sm01 kernel: Freeing unused kernel image (rodata/data gap) memory: 488K
+Dec 23 15:57:29 harlax-sm01 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Dec 23 15:57:29 harlax-sm01 kernel: Run /init as init process
+Dec 23 15:57:29 harlax-sm01 kernel:   with arguments:
+Dec 23 15:57:29 harlax-sm01 kernel:     /init
+Dec 23 15:57:29 harlax-sm01 kernel:   with environment:
+Dec 23 15:57:29 harlax-sm01 kernel:     HOME=/
+Dec 23 15:57:29 harlax-sm01 kernel:     TERM=linux
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI Warning: SystemIO range 0x0000000000000428-0x000000000000042F conflicts with OpRegion 0x0000000000000400-0x000000000000047F (\PMIO) (20240827/utaddress-204)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI Warning: SystemIO range 0x0000000000000428-0x000000000000042F conflicts with OpRegion 0x0000000000000400-0x000000000000042F (\SWC1) (20240827/utaddress-204)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI Warning: SystemIO range 0x0000000000000530-0x000000000000053F conflicts with OpRegion 0x0000000000000500-0x000000000000053B (\GPIO) (20240827/utaddress-204)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI Warning: SystemIO range 0x0000000000000500-0x000000000000052F conflicts with OpRegion 0x0000000000000500-0x000000000000053B (\GPIO) (20240827/utaddress-204)
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: OSL: Resource conflict; ACPI support missing from driver?
+Dec 23 15:57:29 harlax-sm01 kernel: lpc_ich: Resource conflict(s) found affecting gpio_ich
+Dec 23 15:57:29 harlax-sm01 kernel: SCSI subsystem initialized
+Dec 23 15:57:29 harlax-sm01 kernel: e1000e: Intel(R) PRO/1000 Network Driver
+Dec 23 15:57:29 harlax-sm01 kernel: e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Dec 23 15:57:29 harlax-sm01 kernel: e1000e 0000:01:00.0: Interrupt Throttling Rate (ints/sec) set to dynamic conservative mode
+Dec 23 15:57:29 harlax-sm01 kernel: i801_smbus 0000:00:1f.3: SMBus using PCI interrupt
+Dec 23 15:57:29 harlax-sm01 kernel: i2c i2c-0: Successfully instantiated SPD at 0x50
+Dec 23 15:57:29 harlax-sm01 kernel: i2c i2c-0: Successfully instantiated SPD at 0x51
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: bus type USB registered
+Dec 23 15:57:29 harlax-sm01 kernel: usbcore: registered new interface driver usbfs
+Dec 23 15:57:29 harlax-sm01 kernel: usbcore: registered new interface driver hub
+Dec 23 15:57:29 harlax-sm01 kernel: usbcore: registered new device driver usb
+Dec 23 15:57:29 harlax-sm01 kernel: e1000e 0000:01:00.0 0000:01:00.0 (uninitialized): registered PHC clock
+Dec 23 15:57:29 harlax-sm01 kernel: libata version 3.00 loaded.
+Dec 23 15:57:29 harlax-sm01 kernel: e1000e 0000:01:00.0 eth0: (PCI Express:2.5GT/s:Width x1) 00:22:4d:a9:ad:5a
+Dec 23 15:57:29 harlax-sm01 kernel: e1000e 0000:01:00.0 eth0: Intel(R) PRO/1000 Network Connection
+Dec 23 15:57:29 harlax-sm01 kernel: e1000e 0000:01:00.0 eth0: MAC: 3, PHY: 8, PBA No: FFFFFF-0FF
+Dec 23 15:57:29 harlax-sm01 kernel: iTCO_vendor_support: vendor-support=0
+Dec 23 15:57:29 harlax-sm01 kernel: e1000e 0000:01:00.0 eno0: renamed from eth0
+Dec 23 15:57:29 harlax-sm01 kernel: ehci-pci 0000:00:1d.7: EHCI Host Controller
+Dec 23 15:57:29 harlax-sm01 kernel: ehci-pci 0000:00:1d.7: new USB bus registered, assigned bus number 1
+Dec 23 15:57:29 harlax-sm01 kernel: ehci-pci 0000:00:1d.7: debug port 1
+Dec 23 15:57:29 harlax-sm01 kernel: ehci-pci 0000:00:1d.7: irq 23, io mem 0xd0600400
+Dec 23 15:57:29 harlax-sm01 kernel: ehci-pci 0000:00:1d.7: USB 2.0 started, EHCI 1.00
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.12
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb1: Product: EHCI Host Controller
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb1: Manufacturer: Linux 6.12.57+deb13-amd64 ehci_hcd
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb1: SerialNumber: 0000:00:1d.7
+Dec 23 15:57:29 harlax-sm01 kernel: hub 1-0:1.0: USB hub found
+Dec 23 15:57:29 harlax-sm01 kernel: hub 1-0:1.0: 8 ports detected
+Dec 23 15:57:29 harlax-sm01 kernel: iTCO_wdt iTCO_wdt.1.auto: Found a NM10 TCO device (Version=2, TCOBASE=0x0460)
+Dec 23 15:57:29 harlax-sm01 kernel: iTCO_wdt iTCO_wdt.1.auto: initialized. heartbeat=30 sec (nowayout=0)
+Dec 23 15:57:29 harlax-sm01 kernel: ahci 0000:00:1f.2: version 3.0
+Dec 23 15:57:29 harlax-sm01 kernel: ahci 0000:00:1f.2: SSS flag set, parallel bus scan disabled
+Dec 23 15:57:29 harlax-sm01 kernel: ahci 0000:00:1f.2: AHCI vers 0001.0100, 32 command slots, 3 Gbps, SATA mode
+Dec 23 15:57:29 harlax-sm01 kernel: ahci 0000:00:1f.2: 2/4 ports implemented (port mask 0x3)
+Dec 23 15:57:29 harlax-sm01 kernel: ahci 0000:00:1f.2: flags: 64bit ncq stag pm led clo pio slum part 
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.0: UHCI Host Controller
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 2
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.0: detected 2 ports
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.0: irq 23, io port 0x000030a0
+Dec 23 15:57:29 harlax-sm01 kernel: scsi host0: ahci
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.12
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb2: Product: UHCI Host Controller
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb2: Manufacturer: Linux 6.12.57+deb13-amd64 uhci_hcd
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb2: SerialNumber: 0000:00:1d.0
+Dec 23 15:57:29 harlax-sm01 kernel: hub 2-0:1.0: USB hub found
+Dec 23 15:57:29 harlax-sm01 kernel: hub 2-0:1.0: 2 ports detected
+Dec 23 15:57:29 harlax-sm01 kernel: scsi host1: ahci
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.1: UHCI Host Controller
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 3
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.1: detected 2 ports
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.1: irq 19, io port 0x00003080
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb3: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.12
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb3: Product: UHCI Host Controller
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb3: Manufacturer: Linux 6.12.57+deb13-amd64 uhci_hcd
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb3: SerialNumber: 0000:00:1d.1
+Dec 23 15:57:29 harlax-sm01 kernel: scsi host2: ahci
+Dec 23 15:57:29 harlax-sm01 kernel: hub 3-0:1.0: USB hub found
+Dec 23 15:57:29 harlax-sm01 kernel: hub 3-0:1.0: 2 ports detected
+Dec 23 15:57:29 harlax-sm01 kernel: scsi host3: ahci
+Dec 23 15:57:29 harlax-sm01 kernel: ata1: SATA max UDMA/133 abar m1024@0xd0600000 port 0xd0600100 irq 27 lpm-pol 3
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.2: UHCI Host Controller
+Dec 23 15:57:29 harlax-sm01 kernel: ata2: SATA max UDMA/133 abar m1024@0xd0600000 port 0xd0600180 irq 27 lpm-pol 3
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 4
+Dec 23 15:57:29 harlax-sm01 kernel: ata3: DUMMY
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.2: detected 2 ports
+Dec 23 15:57:29 harlax-sm01 kernel: ata4: DUMMY
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.2: irq 18, io port 0x00003060
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb4: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.12
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb4: Product: UHCI Host Controller
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb4: Manufacturer: Linux 6.12.57+deb13-amd64 uhci_hcd
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb4: SerialNumber: 0000:00:1d.2
+Dec 23 15:57:29 harlax-sm01 kernel: hub 4-0:1.0: USB hub found
+Dec 23 15:57:29 harlax-sm01 kernel: hub 4-0:1.0: 2 ports detected
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.3: UHCI Host Controller
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.3: new USB bus registered, assigned bus number 5
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.3: detected 2 ports
+Dec 23 15:57:29 harlax-sm01 kernel: uhci_hcd 0000:00:1d.3: irq 16, io port 0x00003040
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb5: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.12
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb5: Product: UHCI Host Controller
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb5: Manufacturer: Linux 6.12.57+deb13-amd64 uhci_hcd
+Dec 23 15:57:29 harlax-sm01 kernel: usb usb5: SerialNumber: 0000:00:1d.3
+Dec 23 15:57:29 harlax-sm01 kernel: hub 5-0:1.0: USB hub found
+Dec 23 15:57:29 harlax-sm01 kernel: hub 5-0:1.0: 2 ports detected
+Dec 23 15:57:29 harlax-sm01 kernel: usb 1-8: new high-speed USB device number 2 using ehci-pci
+Dec 23 15:57:29 harlax-sm01 kernel: ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+Dec 23 15:57:29 harlax-sm01 kernel: ata1.00: ATA-8: HGST HUS724020ALA640, MF6OABY0, max UDMA/133
+Dec 23 15:57:29 harlax-sm01 kernel: ata1.00: 3907029168 sectors, multi 16: LBA48 NCQ (depth 32), AA
+Dec 23 15:57:29 harlax-sm01 kernel: ata1.00: configured for UDMA/133
+Dec 23 15:57:29 harlax-sm01 kernel: scsi 0:0:0:0: Direct-Access     ATA      HGST HUS724020AL ABY0 PQ: 0 ANSI: 5
+Dec 23 15:57:29 harlax-sm01 kernel: usb 1-8: New USB device found, idVendor=058f, idProduct=6254, bcdDevice= 1.00
+Dec 23 15:57:29 harlax-sm01 kernel: usb 1-8: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Dec 23 15:57:29 harlax-sm01 kernel: hub 1-8:1.0: USB hub found
+Dec 23 15:57:29 harlax-sm01 kernel: hub 1-8:1.0: 4 ports detected
+Dec 23 15:57:29 harlax-sm01 kernel: ata2: SATA link down (SStatus 0 SControl 300)
+Dec 23 15:57:29 harlax-sm01 kernel: sd 0:0:0:0: [sda] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+Dec 23 15:57:29 harlax-sm01 kernel: sd 0:0:0:0: [sda] Write Protect is off
+Dec 23 15:57:29 harlax-sm01 kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Dec 23 15:57:29 harlax-sm01 kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Dec 23 15:57:29 harlax-sm01 kernel: sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+Dec 23 15:57:29 harlax-sm01 kernel:  sda: sda1 sda2 sda3 sda4 sda5 sda6 sda7
+Dec 23 15:57:29 harlax-sm01 kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+Dec 23 15:57:29 harlax-sm01 kernel: random: crng init done
+Dec 23 15:57:29 harlax-sm01 kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Dec 23 15:57:29 harlax-sm01 kernel: device-mapper: uevent: version 1.0.3
+Dec 23 15:57:29 harlax-sm01 kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@lists.linux.dev
+Dec 23 15:57:29 harlax-sm01 kernel: raid6: sse2x4   gen()  2973 MB/s
+Dec 23 15:57:29 harlax-sm01 kernel: raid6: sse2x2   gen()  2505 MB/s
+Dec 23 15:57:29 harlax-sm01 kernel: raid6: sse2x1   gen()  1759 MB/s
+Dec 23 15:57:29 harlax-sm01 kernel: raid6: using algorithm sse2x4 gen() 2973 MB/s
+Dec 23 15:57:29 harlax-sm01 kernel: raid6: .... xor() 992 MB/s, rmw enabled
+Dec 23 15:57:29 harlax-sm01 kernel: raid6: using ssse3x2 recovery algorithm
+Dec 23 15:57:29 harlax-sm01 kernel: xor: measuring software checksum speed
+Dec 23 15:57:29 harlax-sm01 kernel:    prefetch64-sse  :  7354 MB/sec
+Dec 23 15:57:29 harlax-sm01 kernel:    generic_sse     :  6543 MB/sec
+Dec 23 15:57:29 harlax-sm01 kernel: xor: using function: prefetch64-sse (7354 MB/sec)
+Dec 23 15:57:29 harlax-sm01 kernel: Btrfs loaded, zoned=yes, fsverity=yes
+Dec 23 15:57:29 harlax-sm01 kernel: PM: Image not found (code -22)
+Dec 23 15:57:29 harlax-sm01 kernel: EXT4-fs (sda6): orphan cleanup on readonly fs
+Dec 23 15:57:29 harlax-sm01 kernel: EXT4-fs (sda6): mounted filesystem 6b432ba5-5906-4fb3-9390-b8739afd7dd9 ro with ordered data mode. Quota mode: none.
+Dec 23 15:57:29 harlax-sm01 kernel: Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Inserted module 'autofs4'
+Dec 23 15:57:29 harlax-sm01 systemd[1]: systemd 257.9-1~deb13u1 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Detected architecture x86-64.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Hostname set to <harlax-sm01>.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: bpf-restrict-fs: LSM BPF program attached
+Dec 23 15:57:29 harlax-sm01 systemd-fstab-generator[300]: Mount point none is not a valid path, ignoring.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Queued start job for default target graphical.target.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Created slice user.slice - User and Session Slice.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Expecting device dev-disk-by\x2duuid-59e82c3f\x2dcd7c\x2d4941\x2da5d7\x2d8157483fd33e.device - /dev/disk/by-uuid/59e82c3f-cd7c-4941-a5d7-8157483fd33e...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Expecting device dev-disk-by\x2duuid-65697993\x2db566\x2d4239\x2d8fe8\x2d1c6cbaa41c24.device - /dev/disk/by-uuid/65697993-b566-4239-8fe8-1c6cbaa41c24...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Expecting device dev-disk-by\x2duuid-a5752af5\x2da5f7\x2d4446\x2d9d6e\x2de9d1d4ef1277.device - /dev/disk/by-uuid/a5752af5-a5f7-4446-9d6e-e9d1d4ef1277...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Expecting device dev-disk-by\x2duuid-e7b9ae58\x2dfde3\x2d457d\x2da921\x2d70202a109e08.device - /dev/disk/by-uuid/e7b9ae58-fde3-457d-a921-70202a109e08...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Expecting device dev-disk-by\x2duuid-e9bc596f\x2da7f8\x2d4bd7\x2da719\x2ddadaa7f5c3d9.device - /dev/disk/by-uuid/e9bc596f-a7f8-4bd7-a719-dadaa7f5c3d9...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Reached target paths.target - Path Units.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Reached target remote-fs.target - Remote File Systems.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Reached target slices.target - Slice Units.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: systemd-pcrextend.socket - TPM PCR Measurements was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: run-lock.mount: Directory /run/lock to mount over is not empty, mounting anyway.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounting run-lock.mount - Legacy Locks Directory /run/lock...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting blk-availability.service - Availability of block devices...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: systemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathExists=!/run/initramfs/fsck-root).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting systemd-journald.service - Journal Service...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting systemd-network-generator.service - Generate network units from Kernel command line...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: systemd-pcrmachine.service - TPM PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounted run-lock.mount - Legacy Locks Directory /run/lock.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished blk-availability.service - Availability of block devices.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+Dec 23 15:57:29 harlax-sm01 systemd-journald[337]: Collecting audit messages is disabled.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished systemd-network-generator.service - Generate network units from Kernel command line.
+Dec 23 15:57:29 harlax-sm01 kernel: EXT4-fs (sda6): re-mounted 6b432ba5-5906-4fb3-9390-b8739afd7dd9 r/w.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting cloud-init-main.service - Cloud-init: Single Process...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database was skipped because of an unmet condition check (ConditionNeedsUpdate=/etc).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting systemd-random-seed.service - Load/Save OS Random Seed...
+Dec 23 15:57:29 harlax-sm01 kernel: ACPI: bus type drm_connector registered
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+Dec 23 15:57:29 harlax-sm01 systemd[1]: systemd-tpm2-setup.service - TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Dec 23 15:57:29 harlax-sm01 systemd[1]: modprobe@drm.service: Deactivated successfully.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished modprobe@drm.service - Load Kernel Module drm.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished systemd-udev-load-credentials.service - Load udev Rules from Credentials.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounted sys-fs-fuse-connections.mount - FUSE Control File System.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Mounted sys-kernel-config.mount - Kernel Configuration File System.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Finished lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+Dec 23 15:57:29 harlax-sm01 systemd[1]: Started systemd-journald.service - Journal Service.
+Dec 23 15:57:33 harlax-sm01 systemd-journald[337]: Received client request to flush runtime journal.
+Dec 23 15:57:33 harlax-sm01 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+Dec 23 15:57:33 harlax-sm01 kernel: ACPI: button: Power Button [PWRB]
+Dec 23 15:57:33 harlax-sm01 kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input1
+Dec 23 15:57:33 harlax-sm01 kernel: ACPI: button: Sleep Button [SLPB]
+Dec 23 15:57:33 harlax-sm01 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+Dec 23 15:57:33 harlax-sm01 kernel: ACPI: button: Power Button [PWRF]
+Dec 23 15:57:33 harlax-sm01 kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+Dec 23 15:57:33 harlax-sm01 kernel: input: PC Speaker as /devices/platform/pcspkr/input/input3
+Dec 23 15:57:33 harlax-sm01 kernel: at24 0-0050: supply vcc not found, using dummy regulator
+Dec 23 15:57:33 harlax-sm01 kernel: parport_pc 00:04: reported by Plug and Play ACPI
+Dec 23 15:57:33 harlax-sm01 kernel: parport0: PC-style at 0x378, irq 7 [PCSPP,TRISTATE]
+Dec 23 15:57:33 harlax-sm01 kernel: at24 0-0050: 256 byte spd EEPROM, read-only
+Dec 23 15:57:33 harlax-sm01 kernel: at24 0-0051: supply vcc not found, using dummy regulator
+Dec 23 15:57:33 harlax-sm01 kernel: at24 0-0051: 256 byte spd EEPROM, read-only
+Dec 23 15:57:33 harlax-sm01 kernel: ppdev: user-space parallel port driver
+Dec 23 15:57:33 harlax-sm01 kernel: Adding 1048572k swap on /dev/sda4.  Priority:-2 extents:1 across:1048572k 
+Dec 23 15:57:33 harlax-sm01 kernel: EXT4-fs (sda2): mounted filesystem e7b9ae58-fde3-457d-a921-70202a109e08 r/w with ordered data mode. Quota mode: none.
+Dec 23 15:57:34 harlax-sm01 kernel: BTRFS: device label data_part02 devid 1 transid 9 /dev/mapper/vgdata-lv_two (254:2) scanned by mount (493)
+Dec 23 15:57:34 harlax-sm01 kernel: BTRFS info (device dm-2): first mount of filesystem 65697993-b566-4239-8fe8-1c6cbaa41c24
+Dec 23 15:57:34 harlax-sm01 kernel: BTRFS info (device dm-2): using crc32c (crc32c-generic) checksum algorithm
+Dec 23 15:57:34 harlax-sm01 kernel: BTRFS info (device dm-2): enabling free space tree
+Dec 23 15:57:34 harlax-sm01 kernel: BTRFS info (device dm-2): use zstd compression, level 3
+Dec 23 15:57:35 harlax-sm01 kernel: EXT4-fs (dm-0): mounted filesystem 59e82c3f-cd7c-4941-a5d7-8157483fd33e r/w with ordered data mode. Quota mode: none.
+Dec 23 15:57:35 harlax-sm01 kernel: EXT4-fs (dm-1): mounted filesystem a5752af5-a5f7-4446-9d6e-e9d1d4ef1277 r/w with ordered data mode. Quota mode: none.
+Dec 23 15:57:35 harlax-sm01 kernel: audit: type=1400 audit(1766505455.507:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=530 comm="apparmor_parser"
+Dec 23 15:57:35 harlax-sm01 kernel: audit: type=1400 audit(1766505455.507:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=529 comm="apparmor_parser"
+Dec 23 15:57:35 harlax-sm01 kernel: audit: type=1400 audit(1766505455.511:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=528 comm="apparmor_parser"
+Dec 23 15:57:35 harlax-sm01 kernel: audit: type=1400 audit(1766505455.511:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=527 comm="apparmor_parser"
+Dec 23 15:57:35 harlax-sm01 kernel: audit: type=1400 audit(1766505455.531:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=535 comm="apparmor_parser"
+Dec 23 15:57:35 harlax-sm01 kernel: audit: type=1400 audit(1766505455.531:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=534 comm="apparmor_parser"
+Dec 23 15:57:35 harlax-sm01 kernel: audit: type=1400 audit(1766505455.535:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=533 comm="apparmor_parser"
+Dec 23 15:57:35 harlax-sm01 kernel: audit: type=1400 audit(1766505455.543:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="busybox" pid=536 comm="apparmor_parser"
+Dec 23 15:57:35 harlax-sm01 kernel: audit: type=1400 audit(1766505455.543:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cam" pid=537 comm="apparmor_parser"
+Dec 23 15:57:35 harlax-sm01 kernel: audit: type=1400 audit(1766505455.543:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ch-checkns" pid=538 comm="apparmor_parser"
+Dec 23 15:57:40 harlax-sm01 kernel: ISO 9660 Extensions: Microsoft Joliet Level 3
+Dec 23 15:57:40 harlax-sm01 kernel: ISO 9660 Extensions: RRIP_1991A
+Dec 23 15:57:41 harlax-sm01 kernel: 8021q: 802.1Q VLAN Support v1.8
+Dec 23 15:57:41 harlax-sm01 kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Dec 23 15:57:41 harlax-sm01 kernel: Loaded X.509 cert 'benh@debian.org: 577e021cb980e0e820821ba7b54b4961b8b4fadf'
+Dec 23 15:57:41 harlax-sm01 kernel: Loaded X.509 cert 'romain.perier@gmail.com: 3abbc6ec146e09d1b6016ab9d6cf71dd233f0328'
+Dec 23 15:57:41 harlax-sm01 kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Dec 23 15:57:41 harlax-sm01 kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Dec 23 15:57:41 harlax-sm01 kernel: platform regulatory.0: firmware: failed to load regulatory.db (-2)
+Dec 23 15:57:41 harlax-sm01 kernel: platform regulatory.0: firmware: failed to load regulatory.db (-2)
+Dec 23 15:57:41 harlax-sm01 kernel: platform regulatory.0: firmware: failed to load regulatory.db (-2)
+Dec 23 15:57:41 harlax-sm01 kernel: platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+Dec 23 15:57:41 harlax-sm01 kernel: cfg80211: failed to load regulatory.db
+Dec 23 15:57:41 harlax-sm01 kernel: 8021q: adding VLAN 0 to HW filter on device eno0
+Dec 23 15:57:43 harlax-sm01 kernel: e1000e 0000:01:00.0 eno0: NIC Link is Up 100 Mbps Full Duplex, Flow Control: None
+Dec 23 16:01:55 harlax-sm01 kernel: perf: interrupt took too long (2507 > 2500), lowering kernel.perf_event_max_sample_rate to 79750
+Dec 23 16:03:27 harlax-sm01 kernel: perf: interrupt took too long (3173 > 3133), lowering kernel.perf_event_max_sample_rate to 63000
+Dec 23 16:05:49 harlax-sm01 kernel: perf: interrupt took too long (4005 > 3966), lowering kernel.perf_event_max_sample_rate to 49750
+Dec 23 16:08:43 harlax-sm01 kernel: perf: interrupt took too long (5045 > 5006), lowering kernel.perf_event_max_sample_rate to 39500
+Dec 23 16:13:35 harlax-sm01 kernel: perf: interrupt took too long (6329 > 6306), lowering kernel.perf_event_max_sample_rate to 31500
+Dec 23 16:20:19 harlax-sm01 kernel: perf: interrupt took too long (7923 > 7911), lowering kernel.perf_event_max_sample_rate to 25000
+Dec 23 16:33:59 harlax-sm01 kernel: perf: interrupt took too long (9914 > 9903), lowering kernel.perf_event_max_sample_rate to 20000
+Dec 23 19:55:44 harlax-sm01 kernel: perf: interrupt took too long (12411 > 12392), lowering kernel.perf_event_max_sample_rate to 16000
