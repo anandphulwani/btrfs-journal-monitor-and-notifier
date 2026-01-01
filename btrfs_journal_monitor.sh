@@ -282,5 +282,5 @@ main() {
 	log "ERROR: INSTANT notification dispatched."
 }
 
-main
+main || exit $?
 heartbeat
